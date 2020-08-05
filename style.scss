@@ -1,0 +1,138 @@
+$bg: rgb(10, 9, 9);
+$btn: rgba(0, 255, 0, 0.863);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg;
+  color: white;
+}
+header {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $btn;
+    margin-left: 2rem;
+  }
+  .tagline {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 2rem;
+    span {
+      color: $btn;
+    }
+  }
+}
+
+.main {
+  width: 80vw;
+  height: auto;
+  border: 2px solid $btn;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  margin-top: -1rem;
+  .add {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+
+    .input input {
+      position: relative;
+      background: none;
+      border: none;
+      border-bottom: 2px solid white;
+      transition: all 0.6s cubic-bezier(1, 0, 0, 1);
+      position: relative;
+      width: 14rem;
+      color: white;
+      &:focus {
+        color: $btn;
+        border-bottom: 2px solid lime;
+        border-left: 2px solid lime;
+      }
+    }
+
+    .btn h1 {
+      position: relative;
+      width: 1.6rem;
+      height: 1.6rem;
+      padding: 1.4rem;
+      border-radius: 50%;
+      background-color: $btn;
+      font-size: 1.5rem;
+      transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+      margin-right: 1rem;
+
+      &:active {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+
+  .items {
+    position: relative;
+    width: 100%;
+    // margin-top: 1rem;
+
+    .item {
+      position: relative;
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      border: 3px solid white;
+      padding: 0.8rem;
+      border-radius: 1rem;
+    }
+
+    .l {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+    .format {
+      display: flex;
+      justify-content: space-evenly;
+
+      .edit {
+        margin-right: 10px;
+        width: 1.6rem;
+        height: 1.6rem;
+        padding: 1.4rem;
+        border-radius: 50%;
+        background-color: blue;
+        font-size: 1.5rem;
+        transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+        &:active {
+          background-color: rgba(60, 57, 201, 0.794);
+          color: black;
+        }
+      }
+      .delete {
+        width: 1.6rem;
+        height: 1.6rem;
+        padding: 1.4rem;
+        border-radius: 50%;
+        background-color: red;
+        font-size: 1.5rem;
+        transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+        &:active {
+          background-color: rgba(201, 33, 33, 0.719);
+          color: black;
+        }
+      }
+    }
+  }
+}

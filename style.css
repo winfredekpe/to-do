@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0909;
+  color: white;
+}
+
+header {
+  width: 100vw;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(0, 255, 0, 0.863);
+  margin-left: 2rem;
+}
+
+header .tagline {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+header .tagline span {
+  color: rgba(0, 255, 0, 0.863);
+}
+
+.main {
+  width: 80vw;
+  height: auto;
+  border: 2px solid rgba(0, 255, 0, 0.863);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -1rem;
+}
+
+.main .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.main .add .input input {
+  position: relative;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  -webkit-transition: all 0.6s cubic-bezier(1, 0, 0, 1);
+  transition: all 0.6s cubic-bezier(1, 0, 0, 1);
+  position: relative;
+  width: 14rem;
+  color: white;
+}
+
+.main .add .input input:focus {
+  color: rgba(0, 255, 0, 0.863);
+  border-bottom: 2px solid lime;
+  border-left: 2px solid lime;
+}
+
+.main .add .btn h1 {
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 1.4rem;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 0, 0.863);
+  font-size: 1.5rem;
+  -webkit-transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+  transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+  margin-right: 1rem;
+}
+
+.main .add .btn h1:active {
+  background-color: white;
+  color: black;
+}
+
+.main .items {
+  position: relative;
+  width: 100%;
+}
+
+.main .items .item {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 3px solid white;
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+
+.main .items .l {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.main .items .format {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .items .format .edit {
+  margin-right: 10px;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 1.4rem;
+  border-radius: 50%;
+  background-color: blue;
+  font-size: 1.5rem;
+  -webkit-transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+  transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+}
+
+.main .items .format .edit:active {
+  background-color: rgba(60, 57, 201, 0.794);
+  color: black;
+}
+
+.main .items .format .delete {
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 1.4rem;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 1.5rem;
+  -webkit-transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+  transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+}
+
+.main .items .format .delete:active {
+  background-color: rgba(201, 33, 33, 0.719);
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

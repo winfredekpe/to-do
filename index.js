@@ -15,6 +15,8 @@ del.addEventListener("click", remove);
 // functions
 
 function add() {
+  //  creating the nodes
+  
   let text = input.value;
   item = document.createElement("div");
   item.classList.add("item");
@@ -26,6 +28,7 @@ function add() {
   edit.classList.add("edit", "bounceInDown");
   del = document.createElement("div");
   del.classList.add("delete", "bounceInDown");
+
   //   appending
   format.appendChild(edit);
   format.appendChild(del);
@@ -38,3 +41,4 @@ function add() {
 function remove() {
   items.removeChild(this);
 }
+

@@ -5,18 +5,12 @@ new WOW().init();
 let addbtn = document.querySelector(".btn");
 let input = document.querySelector("#input");
 let items = document.querySelector(".items");
-let edit = document.querySelector(".edit");
-let del = document.querySelector(".delete");
-
-// adding eventlisteners
-addbtn.addEventListener("click", add);
-del.addEventListener("click", remove);
 
 // functions
 
 function add() {
   //  creating the nodes
-  
+
   let text = input.value;
   item = document.createElement("div");
   item.classList.add("item");
@@ -37,8 +31,3 @@ function add() {
   item.appendChild(format);
   items.appendChild(item);
 }
-
-function remove() {
-  items.removeChild(this);
-}
-

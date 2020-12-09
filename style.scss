@@ -57,10 +57,12 @@ header {
       position: relative;
       width: 14rem;
       color: white;
+      padding-left: 0.6rem;
+      outline: none;
+      font-size: 1.5rem;
       &:focus {
         color: $btn;
-        border-bottom: 2px solid lime;
-        border-left: 2px solid lime;
+        padding-left: 1.5rem;
       }
     }
 

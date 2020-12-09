@@ -78,12 +78,14 @@ header .tagline span {
   position: relative;
   width: 14rem;
   color: white;
+  padding-left: 0.6rem;
+  outline: none;
+  font-size: 1.5rem;
 }
 
 .main .add .input input:focus {
   color: rgba(0, 255, 0, 0.863);
-  border-bottom: 2px solid lime;
-  border-left: 2px solid lime;
+  padding-left: 1.5rem;
 }
 
 .main .add .btn h1 {
@@ -125,7 +127,7 @@ header .tagline span {
 }
 
 .main .items .l {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 10px;
 }
 
